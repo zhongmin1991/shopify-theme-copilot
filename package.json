@@ -15,7 +15,8 @@
     "prepare": "husky",
     "verify": "pnpm typecheck && pnpm lint",
     "ci": "pnpm check",
-    "smoke": "tsx src/experiments/chrome-smoke.ts"
+    "smoke:chrome": "tsx src/experiments/chrome-smoke.ts",
+    "smoke:lighthouse": "tsx src/experiments/lighthouse-smoke.ts"
   },
   "keywords": [],
   "author": "",

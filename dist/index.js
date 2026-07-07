@@ -6,8 +6,10 @@ program
     .description("AI-powered Shopify Theme Performance Copilot")
     .version("0.1.0");
 // 注册命令
-program.command("audit").action(() => {
-    audit();
+program.command("audit")
+    .argument("<url>", "Shopify store URL to audit")
+    .action(async (url) => {
+    await audit(url);
 });
 // 开始解析命令
 program.parse();

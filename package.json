@@ -7,7 +7,14 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
-    "test": "vitest"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest",
+    "check": "pnpm typecheck && pnpm lint && pnpm build",
+    "format": "echo \"Formatting will be added later\"",
+    "prepare": "husky",
+    "precommit": "pnpm typecheck && pnpm lint",
+    "ci": "pnpm check"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +26,12 @@
     "ora": "^9.4.1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^26.1.0",
+    "eslint": "^10.6.0",
     "tsx": "^4.23.0",
     "typescript": "^6.0.3",
+    "typescript-eslint": "^8.63.0",
     "vitest": "^4.1.10"
   }
 }

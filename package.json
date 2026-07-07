@@ -14,7 +14,8 @@
     "format": "echo \"Formatting will be added later\"",
     "prepare": "husky",
     "verify": "pnpm typecheck && pnpm lint",
-    "ci": "pnpm check"
+    "ci": "pnpm check",
+    "smoke": "tsx src/experiments/chrome-smoke.ts"
   },
   "keywords": [],
   "author": "",

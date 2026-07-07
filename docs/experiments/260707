@@ -1,0 +1,13 @@
+Chrome Launcher
+
+日期：
+2026-07-07
+
+目标：
+验证 Node22 + ESM
+
+结果：
+SUCCESS
+
+官方：
+https://github.com/GoogleChrome/lighthouse

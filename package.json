@@ -10,10 +10,10 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest",
-    "check": "pnpm typecheck && pnpm lint && pnpm build",
+    "check": "pnpm verify && pnpm build",
     "format": "echo \"Formatting will be added later\"",
     "prepare": "husky",
-    "precommit": "pnpm typecheck && pnpm lint",
+    "verify": "pnpm typecheck && pnpm lint",
     "ci": "pnpm check"
   },
   "keywords": [],
